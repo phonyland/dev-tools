@@ -1,0 +1,39 @@
+{
+    "name": "phonyland/dev-tools",
+    "description": "Development requirements for Phony, the realistic PHP Fake Data Generation Framework",
+    "keywords": [
+        "php",
+        "framework",
+        "phony",
+        "faker",
+        "testing",
+        "generator",
+        "seeding",
+        "random"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yunus Emre Deligöz",
+            "email": "ye@deligoz.me"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "ext-mbstring": "*",
+        "ergebnis/phpstan-rules": "^0.15.2",
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "pestphp/pest": "^0.3.9",
+        "phpstan/phpstan": "^0.12.52",
+        "phpstan/phpstan-strict-rules": "^0.12.5",
+        "phpunit/phpunit": "^9.4",
+        "rector/rector-prefixed": "^0.8.44",
+        "simpleregex/srl-php": "^0.1.0",
+        "symfony/var-dumper": "^5.1",
+        "thecodingmachine/phpstan-strict-rules": "^0.12.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
