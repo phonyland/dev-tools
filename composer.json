@@ -22,6 +22,7 @@
         "ergebnis/phpstan-rules": "^0.15.3",
         "friendsofphp/php-cs-fixer": "^3.0",
         "pestphp/pest": "^1.16",
+        "pestphp/pest-plugin-parallel": "^0.2.0",
         "phpstan/phpstan": "^0.12.96",
         "phpstan/phpstan-strict-rules": "^0.12.11",
         "phpunit/phpunit": "^9.5",
