@@ -1,13 +1,6 @@
 {
     "name": "phonyland/dev-tools",
-    "description": "Development requirements for Phony, the PHP Fake Data Generation Framework",
-    "keywords": [
-        "package",
-        "phony",
-        "faker",
-        "generator",
-        "random"
-    ],
+    "description": "\uD83D\uDEE0 Development Tools for \uD83D\uDE43 Phony Framework",
     "license": "MIT",
     "authors": [
         {
@@ -20,13 +13,13 @@
     },
     "require": {
         "ergebnis/phpstan-rules": "^0.15.3",
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "pestphp/pest": "^1.16",
-        "pestphp/pest-plugin-parallel": "^0.2.0",
-        "phpstan/phpstan": "^0.12.96",
+        "friendsofphp/php-cs-fixer": "^3.2",
+        "pestphp/pest": "^1.20",
+        "pestphp/pest-plugin-parallel": "^0.3.1",
+        "phpstan/phpstan": "^0.12.99",
         "phpstan/phpstan-strict-rules": "^0.12.11",
         "phpunit/phpunit": "^9.5",
-        "rector/rector": "^0.11.49",
+        "rector/rector": "^0.11.60",
         "simpleregex/srl-php": "^0.1.0",
         "symfony/var-dumper": "^5.3",
         "thecodingmachine/phpstan-strict-rules": "^0.12.1"
