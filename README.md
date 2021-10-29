@@ -6,20 +6,34 @@
 
 <div align="center">
 
-# Dev-Tools
+# 🛠<br>Developer Tools
 
-This repository contains the 🙃 Phony development tools.
+This Repository contains the Developer Tools for 🙃 Phony Framework.
 
-***
+## 🚀 Installation
 
-If you want to start generating fake data with Phony Framework,  
+You can install the package via composer:
+
+```sh
+composer require phonyland/dev-tools
+```
+
+</div>
+
+<div align="center">
+
+# 🙃
+
+Start generating data with 🙃 Phony Framework,  
 visit the main **[Phony Repository](https://github.com/phonyland/phony)**.
 
 Explore the docs: **[phony.land »](https://phony.land/)**  
-Follow us on Twitter: **[@phonyphp »](https://twitter.com/phonyphp)**
+Follow us on Twitter: **[@phony_land »](https://twitter.com/phony_land)**
 
-Phony Framework was created by  
+**[🙃 Phony Data Generation Framework](https://phony.land)**  
+was created by  
 **[Yunus Emre Deligöz](https://twitter.com/yedeligoez)**  
 under  
 **[MIT license](https://opensource.org/licenses/MIT)**.
+
 </div>
