@@ -21,6 +21,7 @@
         "phpunit/phpunit": "^9.5",
         "rector/rector": "^0.11.60",
         "simpleregex/srl-php": "^0.1.0",
+        "spatie/ray": "^1.30",
         "symfony/var-dumper": "^5.3",
         "thecodingmachine/phpstan-strict-rules": "^0.12.1"
     },
