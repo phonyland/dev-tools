@@ -22,7 +22,8 @@
         "phpstan/phpstan-strict-rules": "^1.0",
         "phpstan/phpstan-webmozart-assert": "^1.0",
         "simpleregex/srl-php": "^0.1.0",
-        "spatie/ray": "^1.30"
+        "spatie/ray": "^1.30",
+        "symfony/thanks": "^1.2"
     },
     "config": {
         "sort-packages": true
@@ -30,7 +31,22 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "post-autoload-dump": [
+            "@normalize",
+            "@validate",
+            "@thanks"
+        ],
+        "lint": "php-cs-fixer fix -v",
         "normalize": "@composer normalize --ansi --no-interaction --quiet",
+        "test": [
+            "@test:lint",
+            "@test:types",
+            "@test:unit"
+        ],
+        "test:lint": "php-cs-fixer fix -v --dry-run",
+        "test:types": "phpstan analyse --ansi --memory-limit=-1",
+        "test:unit": "pest --colors=always",
+        "thanks": "@composer thanks --ansi --no-interaction --quiet",
         "validate": "@composer validate --strict --ansi --no-interaction"
     }
 }
