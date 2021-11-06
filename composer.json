@@ -1,6 +1,8 @@
 {
     "name": "phonyland/dev-tools",
     "description": "\uD83D\uDEE0 Development Tools for \uD83D\uDE43 Phony Framework",
+    "type": "library",
+    "homepage": "http://phony.land",
     "license": "MIT",
     "authors": [
         {
