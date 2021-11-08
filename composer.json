@@ -20,7 +20,6 @@
         "phpstan/phpstan": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "phpstan/phpstan-strict-rules": "^1.0",
-        "phpstan/phpstan-webmozart-assert": "^1.0",
         "simpleregex/srl-php": "^0.1.0",
         "spatie/ray": "^1.30",
         "symfony/thanks": "^1.2"
