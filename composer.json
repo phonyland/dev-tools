@@ -1,19 +1,19 @@
 {
     "name": "phonyland/dev-tools",
-    "type": "library",
     "description": "\ud83d\udee0 Development Tools for \ud83d\ude43 Phony Framework",
-    "homepage": "http://phony.land",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Yunus Emre Delig\u00f6z",
             "email": "ye@deligoz.me"
         }
     ],
+    "homepage": "http://phony.land",
     "require": {
-        "ergebnis/composer-normalize": "^2.16",
+        "ergebnis/composer-normalize": "^2.18",
         "friendsofphp/php-cs-fixer": "^3.3",
-        "infection/infection": "^0.25.3",
+        "infection/infection": "^0.25.4",
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-parallel": "^1.0",
         "phpstan/extension-installer": "^1.1",
@@ -24,11 +24,11 @@
         "spatie/ray": "^1.32",
         "symfony/thanks": "^1.2"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
             "@normalize",
