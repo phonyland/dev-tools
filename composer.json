@@ -26,6 +26,11 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "autoload": {
+        "files": [
+            "src/php-cs-fixer-config.php"
+        ]
+    },
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true,
