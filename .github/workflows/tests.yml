@@ -41,7 +41,7 @@ jobs:
           tools: composer:v2
           coverage: none
         env:
-          COMPOSER_TOKEN: ${{ secrets.GH_TOKEN }}
+          COMPOSER_TOKEN: ${{ github.token }}
 
       - name: Setup Problem Matches
         run: |
@@ -93,7 +93,7 @@ jobs:
           tools: composer:v2
           coverage: pcov
         env:
-          COMPOSER_TOKEN: ${{ secrets.GH_TOKEN }}
+          COMPOSER_TOKEN: ${{ github.token }}
 
       - name: Setup Problem Matches
         run: |
@@ -145,7 +145,7 @@ jobs:
           tools: composer:v2
           coverage: none
         env:
-          COMPOSER_TOKEN: ${{ secrets.GH_TOKEN }}
+          COMPOSER_TOKEN: ${{ github.token }}
 
       - name: Setup Problem Matches
         run: |
@@ -197,7 +197,7 @@ jobs:
           tools: composer:v2
           coverage: pcov
         env:
-          COMPOSER_TOKEN: ${{ secrets.GH_TOKEN }}
+          COMPOSER_TOKEN: ${{ github.token }}
 
       - name: Setup Problem Matches
         run: |
