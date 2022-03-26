@@ -10,3 +10,5 @@ coverage.xml
 *.swp
 *.swo
 .php-cs-fixer.cache
+infection.log
+summary.log
