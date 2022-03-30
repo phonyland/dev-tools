@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+    'declare_strict_types'                        => true,
     'array_syntax'                                => ['syntax' => 'short'],
     'no_unused_imports'                           => true,
     'blank_line_after_namespace'                  => true,
