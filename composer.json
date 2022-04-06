@@ -22,7 +22,8 @@
         "phpstan/phpstan-phpunit": "^1.0",
         "phpstan/phpstan-strict-rules": "^1.1",
         "simpleregex/srl-php": "^0.1.0",
-        "symfony/thanks": "^1.2"
+        "symfony/thanks": "^1.2",
+        "symfony/var-dumper": "^6.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
