@@ -12,8 +12,8 @@
     "homepage": "http://phony.land",
     "require": {
         "ergebnis/composer-normalize": "^2.23",
-        "friendsofphp/php-cs-fixer": "^3.5",
         "infection/infection": "^0.26.4",
+        "laravel/pint": "^1.10",
         "pestphp/pest": "^1.21",
         "pestphp/pest-plugin-mock": "^1.0",
         "pestphp/pest-plugin-parallel": "^1.0",
