@@ -23,7 +23,6 @@
         "phpstan/phpstan-phpunit": "^1.0",
         "phpstan/phpstan-strict-rules": "^1.1",
         "simpleregex/srl-php": "^0.1.0",
-        "symfony/thanks": "^1.2",
         "symfony/var-dumper": "^6.0"
     },
     "minimum-stability": "dev",
@@ -46,8 +45,7 @@
     "scripts": {
         "post-autoload-dump": [
             "@normalize",
-            "@validate",
-            "@thanks"
+            "@validate"
         ],
         "lint": "php-cs-fixer fix -v",
         "normalize": "@composer normalize --ansi --no-interaction --quiet",
@@ -61,7 +59,6 @@
         "test:mutations": "infection --test-framework=pest --show-mutations",
         "test:types": "phpstan analyse --ansi --memory-limit=-1",
         "test:unit": "pest --colors=always",
-        "thanks": "@composer thanks --ansi --no-interaction --quiet",
         "validate": "@composer validate --strict --ansi --no-interaction"
     }
 }
