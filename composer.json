@@ -15,8 +15,6 @@
         "infection/infection": "^0.27",
         "laravel/pint": "^1.10",
         "pestphp/pest": "^2.14",
-        "pestphp/pest-plugin-mock": "^1.0",
-        "pestphp/pest-plugin-parallel": "^1.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan": "^1.4",
         "phpstan/phpstan-mockery": "^1.0",
