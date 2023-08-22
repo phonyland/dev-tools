@@ -4,5 +4,7 @@ parameters:
         - src
         - tests
     tmpDir: build/phpstan
-    checkMissingIterableValueType: false
+    checkMissingIterableValueType: true
+    checkGenericClassInNonGenericObjectType: false
+    reportUnmatchedIgnoredErrors: true
 
