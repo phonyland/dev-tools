@@ -1,6 +1,7 @@
 name: Infection
 
 on:
+  workflow_call:
   push:
     paths:
       - '**.php'

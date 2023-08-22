@@ -1,6 +1,7 @@
 name: Pint
 
 on:
+  workflow_call:
   push:
     paths:
       - '**.php'

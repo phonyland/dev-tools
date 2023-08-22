@@ -1,6 +1,7 @@
 name: PHPstan
 
 on:
+  workflow_call:
   push:
     paths:
       - '**.php'
