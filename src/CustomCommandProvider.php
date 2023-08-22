@@ -8,9 +8,8 @@ use Composer\Plugin\Capability\CommandProvider;
 
 class CustomCommandProvider implements CommandProvider
 {
-
-    public function getCommands()
+    public function getCommands(): array
     {
-        // TODO: Implement getCommands() method.
+        return [new LintCommand()];
     }
 }
