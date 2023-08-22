@@ -31,11 +31,6 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "autoload": {
-        "psr-4": {
-            "Phonyland\\DevTools\\": "src/"
-        }
-    },
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true,
@@ -46,7 +41,7 @@
         "sort-packages": true
     },
     "extra": {
-        "plugin-modifies-downloads": true
+        "class": "Phonyland\\DevTools\\SharedScriptsPlugin"
     },
     "scripts": {
         "post-autoload-dump": [
