@@ -45,6 +45,9 @@
         },
         "sort-packages": true
     },
+    "extra": {
+        "plugin-modifies-downloads": true
+    },
     "scripts": {
         "post-autoload-dump": [
             "@composer normalize --ansi --no-interaction --quiet",
