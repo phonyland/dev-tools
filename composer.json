@@ -2,7 +2,7 @@
     "name": "phonyland/dev-tools",
     "description": "\ud83d\udee0 Development Tools for \ud83d\ude43 Phony Framework",
     "license": "MIT",
-    "type": "library",
+    "type": "composer-plugin",
     "authors": [
         {
             "name": "Yunus Emre Delig\u00f6z",
@@ -11,6 +11,7 @@
     ],
     "homepage": "http://phony.land",
     "require": {
+        "composer-plugin-api": "^2.0",
         "ergebnis/composer-normalize": "^2.23",
         "infection/infection": "^0.27",
         "laravel/pint": "^1.10",
@@ -25,8 +26,16 @@
         "simpleregex/srl-php": "^0.1.0",
         "symfony/var-dumper": "^6.0"
     },
+    "require-dev": {
+        "composer/composer": "^2.0"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Phonyland\\DevTools\\": "src/"
+        }
+    },
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true,
