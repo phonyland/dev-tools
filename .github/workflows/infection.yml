@@ -9,21 +9,22 @@ on:
   push: *default_conditions
 
 jobs:
-  infection:
+  run_mutation_tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Setup PHP
+      - name: Set up PHP with PCOV extension
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
           coverage: pcov
 
-      - name: Install composer dependencies
+      - name: Install dependencies using Composer
         uses: ramsey/composer-install@v2
 
-      - name: Run Infection
+      - name: Execute Infection for mutation testing
         run: composer infection
         continue-on-error: true
 
