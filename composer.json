@@ -2,7 +2,7 @@
     "name": "phonyland/dev-tools",
     "description": "\ud83d\udee0 Development Tools for \ud83d\ude43 Phony Framework",
     "license": "MIT",
-    "type": "composer-plugin",
+    "type": "library",
     "authors": [
         {
             "name": "Yunus Emre Delig\u00f6z",
@@ -44,9 +44,6 @@
             "phpstan/extension-installer": true
         },
         "sort-packages": true
-    },
-    "extra": {
-        "class": "Phonyland\\DevTools\\SharedScriptsPlugin"
     },
     "scripts": {
         "post-autoload-dump": [
