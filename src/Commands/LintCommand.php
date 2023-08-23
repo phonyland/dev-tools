@@ -25,7 +25,8 @@ class LintCommand extends BaseCommand
         $configPath = getcwd() . '/vendor/phonyland/dev-tools/src/pint.json';
 
         // Run the linting command
-        system("$pintExecutable --config=$configPath");
+        system("script -q -e -c $pintExecutable --config=$configPath /dev/null");
+
 
         return 0; // Return 0 for success
     }
