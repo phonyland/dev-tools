@@ -18,7 +18,7 @@ class LintCommand extends BaseCommand
         $this->setDescription('Run Laravel Pint to lint the codebase');
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         // Define the path to the pint executable and its configuration
         $pintExecutable = getcwd() . '/vendor/bin/pint';
@@ -27,6 +27,6 @@ class LintCommand extends BaseCommand
         // Run the linting command
         system("$pintExecutable --config=$configPath");
 
-        return 0; // Return 0 for success
+        return 0;
     }
 }
