@@ -56,7 +56,6 @@
         "coverage": "vendor/bin/pest --coverage --colors=always --order-by=random --configuration=phpunit.xml.dist",
         "coveragep": "vendor/bin/pest --parallel --coverage --colors=always --order-by=random --configuration=phpunit.xml.dist",
         "infection": "vendor/bin/infection --test-framework=pest --show-mutations --threads=max --min-msi=100 --min-covered-msi=100 --ansi",
-        "lintc": "vendor/bin/pint && (git diff-index --quiet HEAD || (git add . && git commit -m 'chore: Fix styling'))",
         "pest": "vendor/bin/pest --colors=always --order-by=random --configuration=phpunit.xml.dist",
         "phpstan": "vendor/bin/phpstan analyse --configuration=phpstan.neon.dist",
         "profile": "vendor/bin/pest --profile --colors=always --order-by=random --configuration=phpunit.xml.dist",
