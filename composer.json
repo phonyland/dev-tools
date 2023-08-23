@@ -54,6 +54,5 @@
             "@composer validate --strict --ansi --no-interaction"
         ],
         "coveragep": "vendor/bin/pest --parallel --coverage --colors=always --order-by=random --configuration=phpunit.xml.dist",
-        "testp": "vendor/bin/pest --parallel --colors=always --order-by=random --configuration=phpunit.xml.dist"
     }
 }
