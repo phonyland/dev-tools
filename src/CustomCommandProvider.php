@@ -8,6 +8,7 @@ use Composer\Plugin\Capability\CommandProvider;
 use Phonyland\DevTools\Commands\InfectionCommand;
 use Phonyland\DevTools\Commands\PestCommand;
 use Phonyland\DevTools\Commands\PestCoverageCommand;
+use Phonyland\DevTools\Commands\PestTypeCommand;
 use Phonyland\DevTools\Commands\PhpstanCommand;
 use Phonyland\DevTools\Commands\PintCommand;
 
@@ -20,6 +21,7 @@ class CustomCommandProvider implements CommandProvider
 
             new PestCommand(),
             new PestCoverageCommand(),
+            new PestTypeCommand(),
 
             new PhpstanCommand(),
             new InfectionCommand(),
