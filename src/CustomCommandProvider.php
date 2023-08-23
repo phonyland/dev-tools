@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Phonyland\DevTools;
 
 use Composer\Plugin\Capability\CommandProvider;
+use Phonyland\DevTools\Commands\LintCommand;
 
 class CustomCommandProvider implements CommandProvider
 {
