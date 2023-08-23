@@ -20,11 +20,9 @@ class PintCommand extends BaseCommand
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        // Define the path to the pint executable and its configuration
         $pintExecutable = getcwd() . '/vendor/bin/pint';
         $configPath = getcwd() . '/vendor/phonyland/dev-tools/pint.json';
 
-        // Run the linting command
         system("$pintExecutable --config=$configPath");
 
         return 0;

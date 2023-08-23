@@ -19,11 +19,9 @@ class PhpstanCommand extends BaseCommand
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        // Define the path to the pest executable and its configuration
         $phpstanExecutable = getcwd() . '/vendor/bin/phpstan';
         $configPath = getcwd() . '/vendor/phonyland/dev-tools/phpstan.neon.dist';
 
-        // Run the linting command
         system("$phpstanExecutable analyse --configuration=$configPath");
 
         return 0;
