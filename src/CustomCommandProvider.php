@@ -7,6 +7,7 @@ namespace Phonyland\DevTools;
 use Composer\Plugin\Capability\CommandProvider;
 use Phonyland\DevTools\Commands\InfectionCommand;
 use Phonyland\DevTools\Commands\PestCommand;
+use Phonyland\DevTools\Commands\PestCoverageCommand;
 use Phonyland\DevTools\Commands\PhpstanCommand;
 use Phonyland\DevTools\Commands\PintCommand;
 
@@ -16,7 +17,10 @@ class CustomCommandProvider implements CommandProvider
     {
         return [
             new PintCommand(),
+
             new PestCommand(),
+            new PestCoverageCommand(),
+
             new PhpstanCommand(),
             new InfectionCommand(),
         ];

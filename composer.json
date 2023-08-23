@@ -53,7 +53,6 @@
             "@composer normalize --ansi --no-interaction --quiet",
             "@composer validate --strict --ansi --no-interaction"
         ],
-        "coverage": "vendor/bin/pest --coverage --colors=always --order-by=random --configuration=phpunit.xml.dist",
         "coveragep": "vendor/bin/pest --parallel --coverage --colors=always --order-by=random --configuration=phpunit.xml.dist",
         "profile": "vendor/bin/pest --profile --colors=always --order-by=random --configuration=phpunit.xml.dist",
         "testp": "vendor/bin/pest --parallel --colors=always --order-by=random --configuration=phpunit.xml.dist",
