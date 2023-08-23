@@ -8,6 +8,7 @@ use Composer\Plugin\Capability\CommandProvider;
 use Phonyland\DevTools\Commands\InfectionCommand;
 use Phonyland\DevTools\Commands\PestCommand;
 use Phonyland\DevTools\Commands\PestCoverageCommand;
+use Phonyland\DevTools\Commands\PestCoverageParallelCommand;
 use Phonyland\DevTools\Commands\PestParallelCommand;
 use Phonyland\DevTools\Commands\PestProfileCommand;
 use Phonyland\DevTools\Commands\PestTypeCommand;
@@ -24,6 +25,7 @@ class CustomCommandProvider implements CommandProvider
             new PestCommand(),
             new PestParallelCommand(),
             new PestCoverageCommand(),
+            new PestCoverageParallelCommand(),
             new PestTypeCommand(),
             new PestProfileCommand(),
 

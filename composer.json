@@ -52,7 +52,6 @@
         "post-autoload-dump": [
             "@composer normalize --ansi --no-interaction --quiet",
             "@composer validate --strict --ansi --no-interaction"
-        ],
-        "coveragep": "vendor/bin/pest --parallel --coverage --colors=always --order-by=random --configuration=phpunit.xml.dist",
+        ]
     }
 }
