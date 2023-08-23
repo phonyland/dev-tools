@@ -9,7 +9,7 @@ use Composer\Command\BaseCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class LintCommand extends BaseCommand
+class PintCommand extends BaseCommand
 {
     protected function configure(): void
     {
