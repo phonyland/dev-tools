@@ -13,16 +13,16 @@ class LintCommand extends BaseCommand
 {
     protected function configure(): void
     {
-        $this->setName('lint2');
-        $this->setAliases(['lint3, lint4']);
-        $this->setDescription('Run linting using shared logic.');
+        $this->setName('pint');
+        $this->setAliases(['lint']);
+        $this->setDescription('Run Laravel Pint to lint the codebase');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         // Define the path to the pint executable and its configuration
         $pintExecutable = getcwd() . '/vendor/bin/pint';
-        $configPath = getcwd() . '/vendor/phonyland/dev-tools/src/pint.json';
+        $configPath = getcwd() . '/vendor/phonyland/dev-tools/pint.json';
 
         // Run the linting command
         system("$pintExecutable --config=$configPath");
